@@ -2,17 +2,18 @@
 int main(){
 
 
-	float side;
+	float length, breadth;
 	float perimeter;
 	
-	printf("Enter the Side of Square: \n");
-	scanf("%f", &side);
+	printf("Enter Length: ");
+	scanf("%f", &length);
 	
-	perimeter = (4 * side);
-	printf("The perimeter of the Square is %f", perimeter);
-	
+	printf("\nEnter Breadth: ");
+	scanf("%f", &breadth);
+
+	perimeter = (2 * length) + (2 * breadth);
+
+	printf("The Perimeter is %f", perimeter);
 
 return 0;
 }
-
-
