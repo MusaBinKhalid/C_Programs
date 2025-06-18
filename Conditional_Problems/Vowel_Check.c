@@ -8,7 +8,7 @@ int main(){
 	
 	switch(ch){
 		
-		case 'A':
+		      case 'A':
         case 'a':
         case 'E':
         case 'e':
