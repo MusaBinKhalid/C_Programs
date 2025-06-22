@@ -3,13 +3,13 @@
 int main()
 {
 
-    int len, i, num, j;
+    int len, num;
 
     printf("Enter Array Length: ");
     scanf("%d", &len);
     int arr[len];
 
-    for (i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
         printf("Enter Element number %d: ", i);
         scanf("%d", &num);
@@ -19,9 +19,16 @@ int main()
     printf("\nARRAY:\n");
     printf("[");
 
-    for (j = len - 1; j >= 0; j--)
+    for (int j = len - 1; j >= 0; j--)
     {
-        printf("%d,", arr[j]);
+        printf("%d", arr[j]);
+        if (j == 0)
+        {
+            continue;
+        }
+        
+        printf(", ");
+        
     }
 
     printf("]");
